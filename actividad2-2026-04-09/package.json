@@ -1,12 +1,10 @@
 {
-  "name": "clase-2026-04-08",
+  "name": "clase-2026-04-09",
   "version": "1.0.0",
   "description": "",
   "main": "index.mjs",
   "scripts": {
-    "dev": "node index.mjs",
-    "leerAPI": "node leerAPI.mjs",
-    "escribirAPI": "node escribirAPI.mjs"
+    "dev": "node index.mjs"
   },
   "keywords": [],
   "author": "",
