@@ -1,5 +1,16 @@
 ### --
 
-# GET - API
+# GET - USUARIOS
 
 GET http://localhost:3000/usuarios
+
+
+### --
+
+#GET - USUARIOS FILTRADOS
+GET http://localhost:3000/usuarios/filtrados
+
+### --
+
+#GET - ERROR
+GET http://localhost:3000/usuarios/as
