@@ -1,3 +1,4 @@
 {
-    "rest-client.previewOption": "exchange"
+    "rest-client.previewOption": "exchange",
+    "editor.wordWrap": "on"
 }
