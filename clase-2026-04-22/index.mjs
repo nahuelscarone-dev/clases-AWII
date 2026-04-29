@@ -33,7 +33,6 @@ app.get('/materias', (req, res) => {
             
             "materia1": "AW2",
             "materia2": "Análisis de Sistemas"
-
             },{
             "Año" :"3er año",
             "Semestre" : "Quinto"
