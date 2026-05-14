@@ -18,7 +18,7 @@ El código se encuentra organizado en módulos independientes para facilitar su 
 *   `GET /api/v1/animes/:id`: Devuelve un anime específico filtrado por su ID. Cuenta con validación previa.
 
 ### Procedimientos (Acciones)
-*   `GET /ejecutar-proceso-resumen`: Endpoint orientado a procedimientos que procesa la totalidad de los datos para devolver un reporte estadístico (Total de capítulos, promedio, etc.).
+*   `GET /ejecutar-proceso-resumen`: Endpoint orientado a procedimientos que procesa la totalidad de los datos para devolver un reporte estadístico (Total de capítulos, promedios, etc.) y, además, genera y devuelve un nuevo conjunto de datos enriquecido. Este proceso evalúa cada anime y le asigna dinámicamente una nueva propiedad de clasificación (`clasificacion_duracion`) dependiendo de su extensión.
 
 ## 🛡️ Middlewares Implementados
 

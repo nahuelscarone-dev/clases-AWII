@@ -1,19 +1,20 @@
-// Definimos una función middleware para validar el ID que llega por la URL (endpoint)
+// Middleware para validar el ID antes de que llegue a la función principal
 export function validarId(req, res, next) {
 
-    // Por seguridad convertimos el parámetro ID en un número
+    // Lo convertimos a Number porque por la URL siempre llega como texto
     const id_anime = Number(req.params.id)
 
-    // Si el resultado no es un número (isNaN), enviamos un error y cortamos la petición
+    // isNaN nos sirve para ver si me mandaron letras en vez de un número
     if (isNaN(id_anime)) {
 
         const respuesta = {
             mensaje: 'Error de validación: el Id ingresado no es un número. Por favor, escriba un carácter numérico.'
         }
+        // Se devuelve error 400 porque el usuario ingresó un dato invalidado
         res.status(400).json(respuesta)
 
     } else {
-        // Si el ID es válido, usamos next() para pasar a la siguiente función (el controlador)
+        // Si es un número válido, el next() deja que siga a la siguiente función (obtenerIdAnime)
         next()
     }
 }
