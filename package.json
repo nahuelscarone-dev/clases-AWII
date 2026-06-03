@@ -17,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/nahuelscarone-dev/clases-AWII/issues"
   },
-  "homepage": "https://github.com/nahuelscarone-dev/clases-AWII#readme"
+  "homepage": "https://github.com/nahuelscarone-dev/clases-AWII#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "multer": "^2.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
 }
